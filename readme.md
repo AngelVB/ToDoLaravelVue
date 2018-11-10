@@ -1,15 +1,23 @@
-To-Do List - Ángel Valera - nov-2018
+**To-Do List**
 
-Instalación:
+Lista de Tareas desarrollada en Laravel 5 y Vue
 
-- Será necesario crear una base de datos y configurar los datos de conexión en el fichero config/database.php
+**Requisitos**
 
-- Correr el comando npm install para instalar las dependencias.
+- Composer
+- Npm
+- Base de Datos
 
-- Correr el comando php artisan migrate para crear las tablas en la base de datos
+**Instalación:**
+
+- composer install
+- npm install
+- Crear una base de datos
+- Configurar los datos de conexión en el fichero config/database.php
+- php artisan migrate para crear las tablas en la base de datos
 
 
-Uso:
+**Uso:**
 
 Es necesario registrarse para empezar a utilizar la aplicación, ya que cada tarea va asociado a un usuario, lo que permite el uso de la aplicación a múltiples usuarios.
 
@@ -25,7 +33,7 @@ Con cada tarea podemos hacer las siguientes opciones:
 Además, si tenemos más de una tarea, dispondremos de los botones Terminar Todo y Eliminar Todo para poder actuar sobre todas las tareas de una sola vez.
 
 
-Mejoras:
+**Mejoras:**
 
 - He añadido la autenticación de usuario.
 - No es necesario recargar la página para actualizar la información.
