@@ -47,12 +47,13 @@ class TodoController extends Controller
         $todo->delete();
     }
     public function all(){
-        Todo::truncate();
+        Todo::where('user_id', auth()->id())->delete();
     }
     public function terminateAll(){
-         Todo::where('terminated', '=', false)->update(['terminated' => true]);
+         Todo::where([
+            ['terminated', '=', false],
+            ['user_id', auth()->id()],
+        ])->update(['terminated' => true]);
          return $this->getAll();
-    }
-
-    
+    } 
 }
